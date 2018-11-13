@@ -71,6 +71,11 @@
             this.btnNuovo.Name = "btnNuovo";
             this.btnNuovo.Size = new System.Drawing.Size(158, 22);
             this.btnNuovo.Text = "Nuovo";
+
+            this.btnNuovo.Name = "btnNuovo";
+            this.btnNuovo.Size = new System.Drawing.Size(158, 22);
+            this.btnNuovo.Text = "Nuovo";
+            this.btnNuovo.Click += new System.EventHandler(this.btnNuovo_Click);
             // 
             // btnApri
             // 
@@ -78,6 +83,7 @@
             this.btnApri.Name = "btnApri";
             this.btnApri.Size = new System.Drawing.Size(158, 22);
             this.btnApri.Text = "Apri";
+            this.btnApri.Click += new System.EventHandler(this.btnApri_Click);
             // 
             // btnSalva
             // 
@@ -85,6 +91,9 @@
             this.btnSalva.Name = "btnSalva";
             this.btnSalva.Size = new System.Drawing.Size(158, 22);
             this.btnSalva.Text = "Salva con nome";
+
+            this.btnSalva.Click += new System.EventHandler(this.btnSalva_Click);
+
             // 
             // btnStrumenti
             // 
@@ -101,6 +110,7 @@
             this.btnIndenta.Name = "btnIndenta";
             this.btnIndenta.Size = new System.Drawing.Size(114, 22);
             this.btnIndenta.Text = "Indenta";
+            this.btnIndenta.Click += new System.EventHandler(this.btnIndenta_Click);
             // 
             // txtlayer
             // 
