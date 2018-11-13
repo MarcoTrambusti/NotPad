@@ -18,8 +18,6 @@ namespace NotPad
             InitializeComponent();
         }
 
-
-
         private void btnNuovo_Click(object sender, EventArgs e)
         {
             txtlayer.Clear();
@@ -87,12 +85,9 @@ namespace NotPad
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var window = MessageBox.Show(
-       "Close the window?",
-       "Are you sure?",
-       MessageBoxButtons.YesNo);
-
-            e.Cancel = (window == DialogResult.No);
+            var window = MessageBox.Show( "Chiudere senza salvare le modifiche al documento?","Esci",MessageBoxButtons.YesNoCancel);
+            if (window == DialogResult.Yes) { SaveFile(); }
+            e.Cancel = (window == DialogResult.Cancel);
         }
     }
 }
