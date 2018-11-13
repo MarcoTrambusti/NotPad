@@ -20,3 +20,4 @@ C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.Form.resources
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.Properties.Resources.resources
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.csproj.GenerateResource.Cache
 >>>>>>> 3553dc798f98f520596d1284c7582ed8bf05a790
+C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.csproj.CoreCompileInputs.cache

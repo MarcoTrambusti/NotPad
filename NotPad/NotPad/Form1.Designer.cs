@@ -71,10 +71,6 @@
             this.btnNuovo.Name = "btnNuovo";
             this.btnNuovo.Size = new System.Drawing.Size(158, 22);
             this.btnNuovo.Text = "Nuovo";
-
-            this.btnNuovo.Name = "btnNuovo";
-            this.btnNuovo.Size = new System.Drawing.Size(158, 22);
-            this.btnNuovo.Text = "Nuovo";
             this.btnNuovo.Click += new System.EventHandler(this.btnNuovo_Click);
             // 
             // btnApri
@@ -91,9 +87,7 @@
             this.btnSalva.Name = "btnSalva";
             this.btnSalva.Size = new System.Drawing.Size(158, 22);
             this.btnSalva.Text = "Salva con nome";
-
             this.btnSalva.Click += new System.EventHandler(this.btnSalva_Click);
-
             // 
             // btnStrumenti
             // 
@@ -157,6 +151,7 @@
             this.Name = "Form";
             this.Text = "NotPad";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.panel1.ResumeLayout(false);

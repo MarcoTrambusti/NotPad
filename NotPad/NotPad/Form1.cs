@@ -85,5 +85,14 @@ namespace NotPad
         }
         public void IndentFile() { }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var window = MessageBox.Show(
+       "Close the window?",
+       "Are you sure?",
+       MessageBoxButtons.YesNo);
+
+            e.Cancel = (window == DialogResult.No);
+        }
     }
 }
