@@ -85,7 +85,7 @@ namespace NotPad
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var window = MessageBox.Show( "Chiudere senza salvare le modifiche al documento?","Esci",MessageBoxButtons.YesNoCancel);
+            var window = MessageBox.Show( "Salvare le modifiche al documento?","Esci",MessageBoxButtons.YesNoCancel);
             if (window == DialogResult.Yes) { SaveFile(); }
             e.Cancel = (window == DialogResult.Cancel);
         }
