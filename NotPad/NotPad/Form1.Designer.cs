@@ -30,9 +30,9 @@
         {
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.btnFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnNuovo = new System.Windows.Forms.ToolStripMenuItem();
             this.btnApri = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalva = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnNuovo = new System.Windows.Forms.ToolStripMenuItem();
             this.btnStrumenti = new System.Windows.Forms.ToolStripMenuItem();
             this.btnIndenta = new System.Windows.Forms.ToolStripMenuItem();
             this.txtlayer = new System.Windows.Forms.TextBox();
@@ -61,23 +61,26 @@
             this.btnFile.Size = new System.Drawing.Size(37, 20);
             this.btnFile.Text = "File";
             // 
+            // btnNuovo
+            // 
+            this.btnNuovo.Name = "btnNuovo";
+            this.btnNuovo.Size = new System.Drawing.Size(158, 22);
+            this.btnNuovo.Text = "Nuovo";
+            this.btnNuovo.Click += new System.EventHandler(this.btnNuovo_Click);
+            // 
             // btnApri
             // 
             this.btnApri.Name = "btnApri";
             this.btnApri.Size = new System.Drawing.Size(158, 22);
             this.btnApri.Text = "Apri";
+            this.btnApri.Click += new System.EventHandler(this.btnApri_Click);
             // 
             // btnSalva
             // 
             this.btnSalva.Name = "btnSalva";
             this.btnSalva.Size = new System.Drawing.Size(158, 22);
             this.btnSalva.Text = "Salva con nome";
-            // 
-            // btnNuovo
-            // 
-            this.btnNuovo.Name = "btnNuovo";
-            this.btnNuovo.Size = new System.Drawing.Size(158, 22);
-            this.btnNuovo.Text = "Nuovo";
+            this.btnSalva.Click += new System.EventHandler(this.btnSalva_Click);
             // 
             // btnStrumenti
             // 
@@ -92,6 +95,7 @@
             this.btnIndenta.Name = "btnIndenta";
             this.btnIndenta.Size = new System.Drawing.Size(152, 22);
             this.btnIndenta.Text = "Indenta";
+            this.btnIndenta.Click += new System.EventHandler(this.btnIndenta_Click);
             // 
             // txtlayer
             // 
