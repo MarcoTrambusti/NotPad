@@ -18,6 +18,8 @@ namespace NotPad
             InitializeComponent();
         }
 
+
+
         private void btnNuovo_Click(object sender, EventArgs e)
         {
             txtlayer.Clear();
@@ -82,5 +84,6 @@ namespace NotPad
             }
         }
         public void IndentFile() { }
+
     }
 }

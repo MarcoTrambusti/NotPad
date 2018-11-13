@@ -10,9 +10,13 @@ C:\Users\studente\Desktop\Lapio\NotPad\NotPad\obj\Debug\NotPad.pdb
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\bin\Debug\NotPad.exe.config
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.exe
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.pdb
+<<<<<<< HEAD
+=======
+>>>>>>> 0fd1c47f9e42934a3d888c8644a3e0d3c7de6fe6
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\bin\Debug\NotPad.exe
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\bin\Debug\NotPad.pdb
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.csprojResolveAssemblyReference.cache
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.Form.resources
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.Properties.Resources.resources
 C:\Users\studente\Desktop\NotPad\NotPad\NotPad\obj\Debug\NotPad.csproj.GenerateResource.Cache
+>>>>>>> 3553dc798f98f520596d1284c7582ed8bf05a790
