@@ -115,10 +115,11 @@
             this.txtlayer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtlayer.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlayer.ForeColor = System.Drawing.Color.Black;
-            this.txtlayer.Location = new System.Drawing.Point(64, 51);
+            this.txtlayer.Location = new System.Drawing.Point(57, 45);
             this.txtlayer.Multiline = true;
             this.txtlayer.Name = "txtlayer";
-            this.txtlayer.Size = new System.Drawing.Size(279, 91);
+            this.txtlayer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtlayer.Size = new System.Drawing.Size(354, 368);
             this.txtlayer.TabIndex = 1;
             // 
             // panel1
@@ -132,22 +133,18 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(151, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(462, 340);
+            this.panel1.Size = new System.Drawing.Size(462, 431);
             this.panel1.TabIndex = 2;
             // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(803, 392);
+            this.ClientSize = new System.Drawing.Size(803, 483);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip);
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form";
             this.Text = "NotPad";

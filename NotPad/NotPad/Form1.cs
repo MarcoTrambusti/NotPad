@@ -49,17 +49,22 @@ namespace NotPad
             // a .CUR file was selected, open it.  
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                using (StreamReader sr = File.OpenText(openFileDialog1.FileName))
+                try
                 {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
+                    using (StreamReader sr = File.OpenText(openFileDialog1.FileName))
                     {
-                        txtlayer.Text +=  s+"\r\n";
+                        string s = "";
+                        while ((s = sr.ReadLine()) != null)
+                        {
+                            txtlayer.Text +=  s+"\r\n";
+                        }
                     }
                 }
+                catch { MessageBox.Show("Si è verificato un errore"); }
+
             }
         }
-        public void SaveFile()
+        public bool SaveFile()
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "File di test|*.txt";
@@ -69,25 +74,33 @@ namespace NotPad
             // If the file name is not an empty string open it for saving.  
             if (saveFileDialog1.FileName != "")
             {
-                // Saves the Image via a FileStream created by the OpenFile method.  
-                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
-                byte[] byteArray = Encoding.UTF8.GetBytes(txtlayer.Text);
-
-                foreach (byte b in byteArray)
+                try
                 {
-                    fs.WriteByte(b);
-                }
+                    // Saves the Image via a FileStream created by the OpenFile method.  
+                    System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+                    byte[] byteArray = Encoding.UTF8.GetBytes(txtlayer.Text);
 
-                fs.Close();
-            }
+                    foreach (byte b in byteArray)
+                    {
+                        fs.WriteByte(b);
+                    }
+
+                    fs.Close();
+                    return true;
+                }catch
+                { MessageBox.Show("File non salvato");}
+             }
+            return false;
         }
         public void IndentFile() { }
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
             var window = MessageBox.Show( "Salvare le modifiche al documento?","Esci",MessageBoxButtons.YesNoCancel);
-            if (window == DialogResult.Yes) { SaveFile(); }
-            e.Cancel = (window == DialogResult.Cancel);
+            if (window == DialogResult.Yes)
+            { if(!SaveFile()) e.Cancel = true; }
+            else
+                e.Cancel = (window == DialogResult.Cancel);
         }
     }
 }
