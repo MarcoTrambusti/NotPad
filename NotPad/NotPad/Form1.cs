@@ -13,6 +13,7 @@ namespace NotPad
 {
     public partial class Form : System.Windows.Forms.Form
     {
+        string filePath;
         public Form()
         {
             InitializeComponent();
@@ -20,7 +21,12 @@ namespace NotPad
 
         private void btnNuovo_Click(object sender, EventArgs e)
         {
-            txtlayer.Clear();
+            if(MessageBox.Show("Pulire l'area di testo?", "Continuare?",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                this.Text = "NotPad";
+                txtlayer.Clear();
+            }
+            
         }
 
         private void btnApri_Click(object sender, EventArgs e)
@@ -41,9 +47,15 @@ namespace NotPad
         {
             // Displays an OpenFileDialog so the user can select a Cursor.  
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "File di test|*.txt";
+            openFileDialog1.Filter = "File di testo|*.txt|Tutti i file|*.";
             openFileDialog1.Title = "Scegli un file di testo";
-
+            if (filePath != null && filePath != string.Empty)
+            {
+                string driectry = Path.GetDirectoryName(filePath);
+                string fileName = Path.GetFileNameWithoutExtension(filePath);
+                openFileDialog1.InitialDirectory = driectry;
+                openFileDialog1.FileName = fileName;
+            }
             // Show the Dialog.  
             // If the user clicked OK in the dialog and  
             // a .CUR file was selected, open it.  
@@ -53,11 +65,14 @@ namespace NotPad
                 {
                     using (StreamReader sr = File.OpenText(openFileDialog1.FileName))
                     {
-                        string s = "";
+                        string s = "", ss = "";
                         while ((s = sr.ReadLine()) != null)
                         {
-                            txtlayer.Text +=  s+"\r\n";
+                            ss +=  s+"\r\n";
                         }
+                        txtlayer.Text = ss;
+                        filePath = openFileDialog1.FileName;
+                        this.Text = "NotPad - " + filePath;
                     }
                 }
                 catch { MessageBox.Show("Si è verificato un errore"); }
@@ -67,9 +82,17 @@ namespace NotPad
         public bool SaveFile()
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "File di test|*.txt";
+            saveFileDialog1.Filter = "File di testo|*.txt|Tutti i file|*.";
             saveFileDialog1.Title = "Salva un file di testo";
-            saveFileDialog1.ShowDialog();
+            if(filePath != null && filePath != string.Empty)
+            {
+                string driectry = Path.GetDirectoryName(filePath);
+                string fileName = Path.GetFileNameWithoutExtension(filePath);
+                saveFileDialog1.InitialDirectory = driectry;
+                saveFileDialog1.FileName = fileName;
+            }
+                
+            DialogResult result = saveFileDialog1.ShowDialog();
 
             // If the file name is not an empty string open it for saving.  
             if (saveFileDialog1.FileName != "")
@@ -86,7 +109,13 @@ namespace NotPad
                     }
 
                     fs.Close();
-                    return true;
+                    if(result==DialogResult.OK)
+                    {
+                        filePath = saveFileDialog1.FileName;
+                        this.Text = "NotPad - " + filePath;
+                        return true;
+                    }
+                        
                 }catch
                 { MessageBox.Show("File non salvato");}
              }
