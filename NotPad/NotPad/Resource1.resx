@@ -117,54 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAGBgAAAEAIACICQAAFgAAACgAAAAYAAAAMAAAAAEAIAAAAAAAAAkAABMLAAATCwAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKAFAFWoCQBUpwkXVagJQVWo
-        CUNVqAlDVagJQ1WoCUNVqAlDVagJQ1WoCUNVqAlDVagJQ1WoCUNVqAlDVagJQ1WoCUNVqAlDVagJQVOn
-        CRZUqAkARqMFAAAAAAAAAAAAS6QHAG+0DwBUqAmLVagJ+VWoCfdVqAn3VagJ91WoCfdVqAn3VagJ91Wo
-        CfdVqAn3VagJ91WoCfdVqAn3VagJ91WoCfdVqAn3VagJ+VSoCYtxtQ8ATaUHAAAAAAAAAAAAS6QHAD+e
-        AwJUqAmmVagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1Wo
-        Cf9VqAn/VagJ/1SoCaZIogYCT6YIAAAAAAAAAAAATKQHAD+eAwJUqAmmVagJ/1WoCf9VqAn/VagJ/1Wo
-        Cf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1SoCaZIogYCT6YIAAAA
-        AAAAAAAATKQHAD+eAwJUqAmmVagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1Wo
-        Cf9VqAn/VagJ/1WoCf9VqAn/VagJ/1SoCaZIogYCT6YIAAAAAAAAAAAATKQHAD+eAwJUqAmmVagJ/1Wo
-        Cf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1So
-        CaZIogYCT6YIAAAAAAAAAAAATKQHAEOgBAJUpwmhVagJ7FWoCf5VqAn/VagJ/1ipDf9aqhD/VqgK/1Wo
-        Cf9VqAj/WKkO/1qqEP9WqAr/VagJ/1WoCf9VqAn/VagJ/1SoCaZIogYCT6YIAAAAAAAAAAAATKQHAEqj
-        BgNUpwmOVKgJmlWoCfhVqAn/VKcH/4u/XP+506L/Zq8j/1OnBv9hrRv/sM+U/7bRnf9jrh//VKgI/1Wo
-        Cf9VqAn/VagJ/1SoCaZIogYCT6YIAAAAAAAAAAAATKQHAEGeAwJUqAmkVagJ/FWoCf9VqAn/U6cG/5/H
-        ev/c4tj/bLIs/1OnB/+dx3f/6Ofq/9jg0P9osCb/VKcH/1WoCf9VqAn/VagJ/1SoCaZIogYCT6YIAAAA
-        AAAAAAAATKQHAD+eAwJUqAmmVagJ/1WoCf9VqAn/U6cG/57HeP/b4dX/abEp/3a2PP/X4ND/3OLX/9Xf
-        zf9osCb/VKcH/1WoCf9VqAn/VagJ/1SoCaZIogYCT6YIAAAAAAAAAAAATKQHAD+eAwJUqAmmVagJ/1Wo
-        Cf9VqAn/U6cG/57HeP/a4dT/dbY6/7/Vq//D17D/r86T/9ff0P9osCb/VKcH/1WoCf9VqAn/VagJ/1So
-        CaZGoQYCT6UIAAAAAAAAAAAATKQHAD+eAwJUqAmmVagJ/1WoCf9VqAn/U6cG/57HeP/a4dT/sM+U/9rh
-        1P96uEL/ocl+/9jg0f9osCb/VKcH/1WoCf9VqAn/VKgJ/1CmCKY5mwMCSqMHAAAAAAAAAAAATKQHAD+e
-        AwJUqAmmVagJ/1WoCf9VqAn/U6cG/53Hd//l5uX/4uTh/6LJf/9UqAj/o8mA/9jg0f9osCb/VKcH/1Wo
-        Cf9VqAn/UKYI/02kB6ZDoAUCSaMGAAAAAAAAAAAATKQHAEGfBAJUpwmkVagJ+1WoCf5VqAn/U6cG/57H
-        eP/r6O3/x9i3/2OuH/9SpwX/pMqC/9ng0/9osCb/VKcH/1WoCf9Rpgj/TaQH/02kB6ZEoQYCSaMGAAAA
-        AAAAAAAATKQHAEqjBgNUpwmOVKgJmFWoCfdVqAn/VKgI/3W2Ov+XxG7/c7U4/1SoB/9UqAj/eLc//4/B
-        Yv9dqxb/VagI/1KnCP9NpAf/TaQH/02kB6ZEoQYCSaMGAAAAAAAAAAAATKQHAEOgBAJUpwmhVagJ7VWo
-        Cf5VqAn/VagJ/1SoB/9TpwX/VKcH/1WoCf9VqAn/VKcH/1OnBv9VqAn/U6gJ/06lCP9NpQj/TqUI/02l
-        CKRCnwMBSaMHAAAAAAAAAAAATKQHAD+eAwJUqAmmVagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1Wo
-        Cf9VqAn/VagJ/1WoCf9VqAn/VK0R/1OwFf9UrxX/U68V8lKtElxZthsASaQJAAAAAAAAAAAATKQHAD+e
-        AwJUqAmmVagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/Va4T/1Wy
-        GP9Vshj6VbIYfVSzGgRUsxkAAAAAAAAAAAAAAAAATKQHAD+eAwJUqAmmVagJ/1WoCf9VqAn/VagJ/1Wo
-        Cf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/Va4S/1WyGP5VshiZU7EXC1SxFwAAAAAAAAAAAAAA
-        AAAAAAAATKQHAD+eAwJUqAmlVagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1WoCf9VqAn/VagJ/1Wo
-        Cf9VqAn/Va4S/1WyGLNUsRcWVLIYADefBwAAAAAAAAAAAAAAAAAAAAAATKQHAGOuDABUqAmGVagJ+VWo
-        CfdVqAn3VagJ91WoCfdVqAn3VagJ91WoCfdVqAn3VagJ91WoCfdVqAn5VK0RyFSzGSZVshgATKwTAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFSoCQBTpwkUVagJQFWoCUNVqAlDVagJQ1WoCUNVqAlDVagJQ1Wo
-        CUNVqAlDVagJQ1WoCUNVqAlDVKoNI1mbAABRsBYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A4AAHAOAABwDAAAMAwAADAMAAAwDAAAMAwAADAMAA
-        AwDAAAMAwAADAMAAAwDAAAMAwAADAMAAAwDAAAMAwAADAMAABwDAAAcAwAAPAMAAHwDgAD8A4AB/AP//
-        /wA=
-</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icon_Qrs_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\icon_Qrs_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

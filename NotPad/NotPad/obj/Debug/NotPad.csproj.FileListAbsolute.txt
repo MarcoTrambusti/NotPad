@@ -16,3 +16,4 @@ C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\N
 C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.Form.resources
 C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.Properties.Resources.resources
 C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.csproj.GenerateResource.Cache
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.Resource1.resources

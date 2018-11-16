@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.btnFile = new System.Windows.Forms.ToolStripMenuItem();
             this.btnNuovo = new System.Windows.Forms.ToolStripMenuItem();
@@ -145,6 +146,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip);
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form";
             this.Text = "NotPad";
