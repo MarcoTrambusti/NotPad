@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -92,9 +93,47 @@ namespace NotPad
              }
             return false;
         }
-        public void IndentFile() { }
+        public void IndentFile() {
 
-        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+            StringReader reader = new StringReader(txtlayer.Text);
+            RichTextBox rchTemp = new RichTextBox();
+            string riga;
+            while ((riga = reader.ReadLine()) != null)
+            {
+                rchTemp.AppendText("\r\n" + riga.Trim());
+            }
+
+            string indentedText = "";
+            int indentCount = 0;
+            bool shouldIndent = false;
+            foreach (string line in rchTemp.Lines)
+            {
+                if (shouldIndent)
+                    indentCount++;
+
+                if (line.Contains("}"))
+                    indentCount--;
+
+                if (indentCount == 0)
+                {
+                    indentedText += (line);
+                    shouldIndent = line.Contains("{");
+                    continue;
+                }
+                
+                string blankSpace = string.Empty;
+                for (int i = 0; i < indentCount; i++)
+                {
+                    blankSpace += "    ";
+                }
+                indentedText += ("\r\n" + blankSpace + line);
+                shouldIndent = line.Contains("{");
+            }
+            txtlayer.Text = indentedText;
+
+        }
+
+    private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
             var window = MessageBox.Show( "Salvare le modifiche al documento?","Esci",MessageBoxButtons.YesNoCancel);
             if (window == DialogResult.Yes)

@@ -7,3 +7,12 @@ C:\Users\Alessio\Desktop\bello\NotPad\NotPad\NotPad\obj\Debug\NotPad.Properties.
 C:\Users\Alessio\Desktop\bello\NotPad\NotPad\NotPad\obj\Debug\NotPad.csproj.GenerateResource.Cache
 C:\Users\Alessio\Desktop\bello\NotPad\NotPad\NotPad\obj\Debug\NotPad.exe
 C:\Users\Alessio\Desktop\bello\NotPad\NotPad\NotPad\obj\Debug\NotPad.pdb
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\bin\Debug\NotPad.exe.config
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.exe
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.pdb
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\bin\Debug\NotPad.exe
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\bin\Debug\NotPad.pdb
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.csprojResolveAssemblyReference.cache
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.Form.resources
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.Properties.Resources.resources
+C:\Users\gigi pastrocchi\Desktop\compitiu\TPSIT\NotPad\NotPad\NotPad\obj\Debug\NotPad.csproj.GenerateResource.Cache
