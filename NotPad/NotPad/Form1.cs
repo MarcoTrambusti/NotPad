@@ -48,18 +48,14 @@ namespace NotPad
         {
             // Displays an OpenFileDialog so the user can select a Cursor.  
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "File di testo|*.txt|Tutti i file|*.";
+            openFileDialog1.Filter = "File di testo|*.txt|Tutti i file|*.*";
             openFileDialog1.Title = "Scegli un file di testo";
             if (filePath != null && filePath != string.Empty)
             {
-                string driectry = Path.GetDirectoryName(filePath);
-                string fileName = Path.GetFileNameWithoutExtension(filePath);
-                openFileDialog1.InitialDirectory = driectry;
-                openFileDialog1.FileName = fileName;
+                openFileDialog1.InitialDirectory = Path.GetDirectoryName(filePath);
+                openFileDialog1.FileName = Path.GetFileNameWithoutExtension(filePath);
             }
-            // Show the Dialog.  
-            // If the user clicked OK in the dialog and  
-            // a .CUR file was selected, open it.  
+
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 try
@@ -83,7 +79,7 @@ namespace NotPad
         public bool SaveFile()
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "File di testo|*.txt|Tutti i file|*.";
+            saveFileDialog1.Filter = "File di testo|*.txt|Tutti i file|*.*";
             saveFileDialog1.Title = "Salva un file di testo";
             if(filePath != null && filePath != string.Empty)
             {
@@ -95,23 +91,22 @@ namespace NotPad
                 
             DialogResult result = saveFileDialog1.ShowDialog();
 
-            // If the file name is not an empty string open it for saving.  
+
             if (saveFileDialog1.FileName != "")
             {
                 try
                 {
-                    // Saves the Image via a FileStream created by the OpenFile method.  
-                    System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
-                    byte[] byteArray = Encoding.UTF8.GetBytes(txtlayer.Text);
-
-                    foreach (byte b in byteArray)
-                    {
-                        fs.WriteByte(b);
-                    }
-
-                    fs.Close();
                     if(result==DialogResult.OK)
                     {
+                        System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+                        byte[] byteArray = Encoding.UTF8.GetBytes(txtlayer.Text);
+
+                        foreach (byte b in byteArray)
+                        {
+                            fs.WriteByte(b);
+                        }
+
+                        fs.Close();
                         filePath = saveFileDialog1.FileName;
                         this.Text = "NotPad - " + filePath;
                         return true;
