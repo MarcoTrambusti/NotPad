@@ -117,45 +117,44 @@ namespace NotPad
              }
             return false;
         }
-      public void IndentFile() {
-    
-    StringReader reader = new StringReader(txtlayer.Text);
-    RichTextBox rchTemp = new RichTextBox();
-    string riga;
-    while ((riga = reader.ReadLine()) != null)
-    {
-        rchTemp.AppendText("\r\n" + riga.Trim());
-    }
-    
-    string indentedText = "";
-    int indentCount = 0;
-    bool shouldIndent = false;
-    foreach (string line in rchTemp.Lines)
-    {
-        if (shouldIndent)
-        indentCount++;
-        
-    if (line.Contains("}"))
-    indentCount--;
-    
-    if (indentCount == 0)
-    {
-        indentedText += (line);
-        shouldIndent = line.Contains("{");
-            continue;
-        }
-        
-        string blankSpace = string.Empty;
-        for (int i = 0; i < indentCount; i++)
+        public void IndentFile()
         {
-            blankSpace += "    ";
+            StringReader reader = new StringReader(txtlayer.Text);
+            RichTextBox rchTemp = new RichTextBox();
+            string riga;
+            while ((riga = reader.ReadLine()) != null)
+            {
+                rchTemp.AppendText("\r\n" + riga.Trim());
+            }
+
+            string indentedText = "";
+            int indentCount = 0;
+            bool shouldIndent = false;
+            foreach (string line in rchTemp.Lines)
+            {
+                if (shouldIndent)
+                    indentCount++;
+
+                if (line.Contains("}"))
+                    indentCount--;
+
+                if (indentCount == 0)
+                {
+                    indentedText += (line);
+                    shouldIndent = line.Contains("{");
+                    continue;
+                }
+
+                string blankSpace = string.Empty;
+                for (int i = 0; i < indentCount; i++)
+                {
+                    blankSpace += "    ";
+                }
+                indentedText += ("\r\n" + blankSpace + line);
+                shouldIndent = line.Contains("{");
+            }
+            txtlayer.Text = indentedText;
         }
-        indentedText += ("\r\n" + blankSpace + line);
-        shouldIndent = line.Contains("{");
-        }
-        txtlayer.Text = indentedText;
-        
-    }
 
     private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
